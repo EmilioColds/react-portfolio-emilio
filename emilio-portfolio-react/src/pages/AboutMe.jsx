@@ -6,7 +6,9 @@ function AboutMe() {
         <section>
             <h2> About Me </h2>
             <img src={profileImage} alt="Profile" />
-            <p> Short bio of the dev. </p>
+            <p> Hi!
+                I’m a Mexican photographer 📸 entrepreneur 🧑🏻‍💻 and web developer 💻
+                trying to create a better world, one smile at a time 😁 </p>
         </section>
     );
 }

@@ -4,10 +4,16 @@ import Project from "../components/Project";
 function Portfolio() {
     const projects = [
         {
-            title: 'Project 1',
+            title: 'Social Network API',
             imageUrl: '/assets/',
-            deployedUrl: 'The url',
-            repoUrl: 'The url'
+            deployedUrl: 'https://youtu.be/E_qafQAr2uwLinks',
+            repoUrl: 'https://github.com/EmilioColds/social-network-api'
+        },
+        {
+            title: 'Movie Rating Game',
+            imageUrl: '/assets/',
+            deployedUrl: 'https://emiliocolds.github.io/movie-rating-game/',
+            repoUrl: 'https://github.com/EmilioColds/movie-rating-game'
         },
         // More projects
     ];

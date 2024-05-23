@@ -6,11 +6,12 @@ function Resume() {
             <h2>
                 Resume
             </h2>
-            <a href='PATH TO RESUME IN PDF' download> Download Resume </a>
+            <a href='../public/assets/EmilioFriasCV.pdf' download> Download Resume </a>
             <ul>
-                <li> Proficiency 1 </li>
-                <li> Proficiency 1 </li>
-                <li> Proficiency 1 </li>
+                <li> MongoDB </li>
+                <li> Express </li>
+                <li> React </li>
+                <li> Node.js </li>
             </ul>
         </section>  
     );
