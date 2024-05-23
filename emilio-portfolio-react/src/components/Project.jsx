@@ -2,7 +2,7 @@ import React from 'react';
 
 function Project({ title, imageUrl, deployedUrl, repoUrl}) {
     return (
-        <div>
+        <div className="project">
             <img src={imageUrl} alt={title} />
             <h3> {title} </h3>
             <a href={deployedUrl} target='_blank' rel="noopener noreferrer" > View Project </a>

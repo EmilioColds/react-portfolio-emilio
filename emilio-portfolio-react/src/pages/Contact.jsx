@@ -28,7 +28,7 @@ function Contact() {
     return (
         <section>
             <h2>Contact</h2>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="contact-form">
                 <label>
                     Name: 
                     <input type='text' name='name' value={form.name} onChange={handleChange} />
