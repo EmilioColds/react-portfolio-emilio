@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
@@ -8,20 +8,17 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 function App() {
-
   return (
     <>
       <Header />
       <main>
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/about-me" />
-          </Route>
-          <Route path="/about-me" component={AboutMe} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Navigate to="/about-me" />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
       </main>
       <Footer />
     </>
