@@ -31,17 +31,17 @@ function Contact() {
             <form onSubmit={handleSubmit}>
                 <label>
                     Name: 
-                    <input type='text' name='name' value='{form.name}' onChange='{handleChange}' />
+                    <input type='text' name='name' value={form.name} onChange={handleChange} />
                     {errors.name && <span>{errors.name}</span>}
                 </label>
                 <label>
                     Email: 
-                    <input type='email' name='email' value='{form.email}' onChange='{handleChange}' />
+                    <input type='email' name='email' value={form.email} onChange={handleChange} />
                     {errors.email && <span>{errors.email}</span>}
                 </label>
                 <label>
                     Message: 
-                    <textarea name='message' value='{form.message}' onChange='{handleChange}'> </textarea>
+                    <textarea name='message' value={form.message} onChange={handleChange}> </textarea>
                     {errors.message && <span>{errors.message}</span>}
                 </label>
                 <button type='submit'> Submit </button>
